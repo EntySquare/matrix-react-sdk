@@ -43,7 +43,7 @@ const ANNOTATE_STRINGS = false;
 counterpart.setSeparator("|");
 
 // see `translateWithFallback` for an explanation of fallback handling
-const FALLBACK_LOCALE = "en";
+const FALLBACK_LOCALE = "zh-hans";
 counterpart.setFallbackLocale(FALLBACK_LOCALE);
 
 interface ErrorOptions {
@@ -513,7 +513,7 @@ export function getAllLanguagesFromJson(): Promise<Language[]> {
 export function getLanguagesFromBrowser(): readonly string[] {
     if (navigator.languages && navigator.languages.length) return navigator.languages;
     if (navigator.language) return [navigator.language];
-    return [navigator.userLanguage || "en"];
+    return [navigator.userLanguage || "zh-hans"];
 }
 
 export function getLanguageFromBrowser(): string {
@@ -585,7 +585,7 @@ export function pickBestLanguage(langs: string[]): string {
 
     {
         // Neither of those? Try an english variant.
-        const enIndex = normalisedLangs.findIndex((l) => l.startsWith("en"));
+        const enIndex = normalisedLangs.findIndex((l) => l.startsWith("zh-hans"));
         if (enIndex > -1) return langs[enIndex];
     }
 

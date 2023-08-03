@@ -74,10 +74,15 @@ export default abstract class AbstractLocalStorageSettingsHandler extends Settin
             try {
                 const value = JSON.parse(localStorage.getItem(key)!);
                 AbstractLocalStorageSettingsHandler.objectCache.set(key, value);
-                return value;
+                console.log("valuevaluevaluevaluevaluevaluevaluevalue", value);
+                if (value == null) {
+                    return { layout: "bubble", language: "zh-hans", theme: "dark" } as any;
+                } else {
+                    return value;
+                }
             } catch (err) {
                 console.error("Failed to parse localStorage object", err);
-                return null;
+                return { layout: "bubble", language: "zh-hans", theme: "dark" } as any;
             }
         }
 

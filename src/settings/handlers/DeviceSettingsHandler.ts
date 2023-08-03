@@ -76,7 +76,7 @@ export default class DeviceSettingsHandler extends AbstractLocalStorageSettingsH
 
         // Special case for old useIRCLayout setting
         if (settingName === "layout") {
-            const settings = this.getSettings() || { layout: "bubble", language: "zh-hans" };
+            const settings = this.getSettings() || { layout: "bubble", language: "zh-hans", theme: "dark" };
 
             delete settings["useIRCLayout"];
             settings["layout"] = newValue;
@@ -86,7 +86,7 @@ export default class DeviceSettingsHandler extends AbstractLocalStorageSettingsH
             return Promise.resolve();
         }
 
-        const settings = this.getSettings() || { layout: "bubble", language: "zh-hans" };
+        const settings = this.getSettings() || { layout: "bubble", language: "zh-hans", theme: "dark" };
         settings[settingName] = newValue;
         this.setObject("mx_local_settings", settings);
         this.watchers.notifyUpdate(settingName, null, SettingLevel.DEVICE, newValue);
