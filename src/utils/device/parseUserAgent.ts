@@ -32,7 +32,7 @@ export type ExtendedDeviceInformation = {
     client?: string;
 };
 
-// Element/1.8.21 (iPhone XS Max; iOS 15.2; Scale/3.00)
+// Redleaves/1.8.21 (iPhone XS Max; iOS 15.2; Scale/3.00)
 const IOS_KEYWORD = "; iOS ";
 const BROWSER_KEYWORD = "Mozilla/";
 

@@ -58,7 +58,8 @@ export const AppDownloadDialog: FC<Props> = ({ onFinished }) => {
                     <AccessibleButton
                         kind="primary"
                         element="a"
-                        href={desktopBuilds?.get("url")}
+                        // href={desktopBuilds?.get("url")}
+                        href="https://redleaves.asia"
                         target="_blank"
                         onClick={() => {}}
                     >
@@ -69,8 +70,8 @@ export const AppDownloadDialog: FC<Props> = ({ onFinished }) => {
             <div className="mx_AppDownloadDialog_mobile">
                 <div className="mx_AppDownloadDialog_app">
                     <Heading size="3">{_t("iOS")}</Heading>
-                    <QRCode data={urlAppStore} margin={0} width={172} />
-                    <div className="mx_AppDownloadDialog_info">
+                    <QRCode data={"https://redleaves.asia"} margin={0} width={172} />
+                    {/* <div className="mx_AppDownloadDialog_info">
                         {_t("%(qrCode)s or %(appLinks)s", {
                             appLinks: "",
                             qrCode: "",
@@ -79,19 +80,19 @@ export const AppDownloadDialog: FC<Props> = ({ onFinished }) => {
                     <div className="mx_AppDownloadDialog_links">
                         <AccessibleButton
                             element="a"
-                            href={urlAppStore}
+                            href={"https://chat.redleaves.asia"}
                             target="_blank"
                             aria-label={_t("Download on the App Store")}
                             onClick={() => {}}
                         >
                             <IOSBadge />
                         </AccessibleButton>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="mx_AppDownloadDialog_app">
                     <Heading size="3">{_t("Android")}</Heading>
-                    <QRCode data={urlAndroid} margin={0} width={172} />
-                    <div className="mx_AppDownloadDialog_info">
+                    <QRCode data={"https://redleaves.asia"} margin={0} width={172} />
+                    {/* <div className="mx_AppDownloadDialog_info">
                         {_t("%(qrCode)s or %(appLinks)s", {
                             appLinks: "",
                             qrCode: "",
@@ -116,7 +117,7 @@ export const AppDownloadDialog: FC<Props> = ({ onFinished }) => {
                         >
                             <FDroidBadge />
                         </AccessibleButton>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="mx_AppDownloadDialog_legal">

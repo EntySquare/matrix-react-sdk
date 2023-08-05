@@ -419,7 +419,7 @@ export default class AppTile extends React.Component<IProps, IState> {
             // being optimized out by a browser. Instead, we'll just point
             // the iframe at a page that is reasonably safe to use in the
             // event the iframe doesn't wink away.
-            // This is relative to where the Element instance is located.
+            // This is relative to where the Redleaves instance is located.
             this.iframe.src = "about:blank";
         }
 

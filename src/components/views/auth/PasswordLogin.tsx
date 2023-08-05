@@ -396,7 +396,7 @@ export default class PasswordLogin extends React.PureComponent<IProps, IState> {
         if (!SdkConfig.get().disable_3pid_login) {
             loginType = (
                 <div className="mx_Login_type_container">
-                    <label className="mx_Login_type_label">{_t("Sign in with")}</label>
+                    {/* <label className="mx_Login_type_label">{_t("Sign in with")}</label>
                     <Field
                         element="select"
                         value={this.state.loginType}
@@ -412,7 +412,7 @@ export default class PasswordLogin extends React.PureComponent<IProps, IState> {
                         <option key={LoginField.Password} value={LoginField.Password}>
                             {_t("Phone")}
                         </option>
-                    </Field>
+                    </Field> */}
                 </div>
             );
         }

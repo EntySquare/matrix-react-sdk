@@ -421,7 +421,7 @@ export const SETTINGS: { [setting: string]: ISetting } = {
         isFeature: true,
         supportedLevels: LEVELS_FEATURE,
         labsGroup: LabGroup.VoiceAndVideo,
-        displayName: _td("Element Call video rooms"),
+        displayName: _td("Redleaves Call video rooms"),
         controller: new ReloadOnChangeController(),
         default: false,
     },

@@ -6,7 +6,7 @@ on:
         types: [upstream-sdk-notify]
 jobs:
     notify-element-web:
-        name: "Notify Element Web"
+        name: "Notify Redleaves Web"
         runs-on: ubuntu-latest
         # Only respect triggers from our develop branch, ignore that of forks
         if: github.repository == 'matrix-org/matrix-react-sdk'

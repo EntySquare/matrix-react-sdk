@@ -16,7 +16,7 @@ limitations under the License.
 
 /* Intercept requests to `config.json`, so that we can test against a known configuration.
  *
- * If we don't do this, we end up testing against the Element config for develop.element.io, which then means
+ * If we don't do this, we end up testing against the Redleaves config for develop.element.io, which then means
  * we make requests to the live `matrix.org`, which makes our tests dependent on matrix.org being up and responsive.
  */
 
@@ -26,7 +26,7 @@ const CONFIG_JSON = {
     // This is deliberately quite a minimal config.json, so that we can test that the default settings
     // actually work.
     //
-    // The only thing that we really *need* (otherwise Element refuses to load) is a default homeserver.
+    // The only thing that we really *need* (otherwise Redleaves refuses to load) is a default homeserver.
     // We point that to a guaranteed-invalid domain.
     default_server_config: {
         "m.homeserver": {

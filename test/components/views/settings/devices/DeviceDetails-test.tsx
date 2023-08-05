@@ -58,7 +58,7 @@ describe("<DeviceDetails />", () => {
             display_name: "My Device",
             last_seen_ip: "123.456.789",
             last_seen_ts: now - 60000000,
-            appName: "Element Web",
+            appName: "Redleaves Web",
             client: "Firefox 100",
             deviceModel: "Iphone X",
             deviceOperatingSystem: "Windows 95",

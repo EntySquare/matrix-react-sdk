@@ -184,7 +184,7 @@ export default async function createRoom(client: MatrixClient, opts: IOpts): Pro
         createOpts.power_level_content_override = {
             events: {
                 ...DEFAULT_EVENT_POWER_LEVELS,
-                // Element Call should be disabled by default
+                // Redleaves Call should be disabled by default
                 [ElementCall.MEMBER_EVENT_TYPE.name]: 100,
                 // Make sure only admins can enable it
                 [ElementCall.CALL_EVENT_TYPE.name]: 100,
@@ -347,7 +347,7 @@ export default async function createRoom(client: MatrixClient, opts: IOpts): Pro
                 const plEvent = (await room).currentState.getStateEvents(EventType.RoomPowerLevels, "");
                 await client.setPowerLevel(roomId, client.getUserId()!, 100, plEvent);
             } else if (opts.roomType === RoomType.UnstableCall) {
-                // Set up this video room with an Element call
+                // Set up this video room with an Redleaves call
                 await ElementCall.create(await room);
 
                 // Reset our power level back to admin so that the call becomes immutable

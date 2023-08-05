@@ -119,15 +119,15 @@ export default class UserSettingsDialog extends React.Component<IProps, IState> 
                 "UserSettingsKeyboard",
             ),
         );
-        tabs.push(
-            new Tab(
-                UserTab.Sidebar,
-                _td("Sidebar"),
-                "mx_UserSettingsDialog_sidebarIcon",
-                <SidebarUserSettingsTab />,
-                "UserSettingsSidebar",
-            ),
-        );
+        // tabs.push(
+        //     new Tab(
+        //         UserTab.Sidebar,
+        //         _td("Sidebar"),
+        //         "mx_UserSettingsDialog_sidebarIcon",
+        //         <SidebarUserSettingsTab />,
+        //         "UserSettingsSidebar",
+        //     ),
+        // );
 
         if (SettingsStore.getValue(UIFeature.Voip)) {
             tabs.push(
@@ -165,15 +165,15 @@ export default class UserSettingsDialog extends React.Component<IProps, IState> 
             SdkConfig.get("show_labs_settings") ||
             SettingsStore.getFeatureSettingNames().some((k) => SettingsStore.getBetaInfo(k))
         ) {
-            tabs.push(
-                new Tab(
-                    UserTab.Labs,
-                    _td("Labs"),
-                    "mx_UserSettingsDialog_labsIcon",
-                    <LabsUserSettingsTab />,
-                    "UserSettingsLabs",
-                ),
-            );
+            // tabs.push(
+            //     new Tab(
+            //         UserTab.Labs,
+            //         _td("Labs"),
+            //         "mx_UserSettingsDialog_labsIcon",
+            //         <LabsUserSettingsTab />,
+            //         "UserSettingsLabs",
+            //     ),
+            // );
         }
         if (this.state.mjolnirEnabled) {
             tabs.push(
@@ -186,15 +186,15 @@ export default class UserSettingsDialog extends React.Component<IProps, IState> 
                 ),
             );
         }
-        tabs.push(
-            new Tab(
-                UserTab.Help,
-                _td("Help & About"),
-                "mx_UserSettingsDialog_helpIcon",
-                <HelpUserSettingsTab closeSettingsFn={() => this.props.onFinished()} />,
-                "UserSettingsHelpAbout",
-            ),
-        );
+        // tabs.push(
+        //     new Tab(
+        //         UserTab.Help,
+        //         _td("Help & About"),
+        //         "mx_UserSettingsDialog_helpIcon",
+        //         <HelpUserSettingsTab closeSettingsFn={() => this.props.onFinished()} />,
+        //         "UserSettingsHelpAbout",
+        //     ),
+        // );
 
         return tabs as NonEmptyArray<Tab<UserTab>>;
     }

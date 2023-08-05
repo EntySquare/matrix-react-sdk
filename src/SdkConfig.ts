@@ -25,7 +25,7 @@ import { DeepReadonly, Defaultize } from "./@types/common";
 
 // see element-web config.md for docs, or the IConfigOptions interface for dev docs
 export const DEFAULTS: DeepReadonly<IConfigOptions> = {
-    brand: "Element",
+    brand: "Redleaves",
     help_url: "https://element.io/help",
     help_encryption_url: "https://element.io/help#encryption",
     integrations_ui_url: "https://scalar.vector.im/",
@@ -39,7 +39,7 @@ export const DEFAULTS: DeepReadonly<IConfigOptions> = {
         url: "https://call.element.io",
         use_exclusively: false,
         participant_limit: 8,
-        brand: "Element Call",
+        brand: "Redleaves Call",
     },
 
     // @ts-ignore - we deliberately use the camelCase version here so we trigger

@@ -53,7 +53,7 @@ export async function createDmLocalRoom(client: MatrixClient, targets: Member[])
     );
 
     if (await determineCreateRoomEncryptionOption(client, targets)) {
-        localRoom.encrypted = true;
+        localRoom.encrypted = false;
         events.push(
             new MatrixEvent({
                 event_id: `~${localRoom.roomId}:${client.makeTxnId()}`,

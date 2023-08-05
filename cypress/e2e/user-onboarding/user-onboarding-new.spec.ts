@@ -62,7 +62,7 @@ describe("User Onboarding (new user)", () => {
 
     it("app download dialog", () => {
         cy.findByRole("button", { name: "Download apps" }).click();
-        cy.get("[role=dialog]").get("#mx_BaseDialog_title").findByText("Download Element").should("exist");
+        cy.get("[role=dialog]").get("#mx_BaseDialog_title").findByText("Download Redleaves").should("exist");
         cy.get("[role=dialog]").percySnapshotElement("App download dialog", {
             widths: [640],
         });

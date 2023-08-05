@@ -117,7 +117,7 @@ export class StopGapWidgetDriver extends WidgetDriver {
             virtual &&
             new URL(SdkConfig.get("element_call").url ?? DEFAULTS.element_call.url!).origin === this.forWidget.origin
         ) {
-            // This is a trusted Element Call widget that we control
+            // This is a trusted Redleaves Call widget that we control
             this.allowedCapabilities.add(MatrixCapabilities.AlwaysOnScreen);
             this.allowedCapabilities.add(MatrixCapabilities.MSC3846TurnServers);
             this.allowedCapabilities.add(`org.matrix.msc2762.timeline:${inRoomId}`);

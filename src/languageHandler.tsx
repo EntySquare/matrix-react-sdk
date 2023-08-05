@@ -59,7 +59,7 @@ interface ErrorOptions {
  * `translatedMessage` property in the UI and inspect the underlying error with the
  * `cause` property.
  *
- * The error message will display as English in the console and logs so Element
+ * The error message will display as English in the console and logs so Redleaves
  * developers can easily understand the error and find the source in the code. It also
  * helps tools like Sentry deduplicate the error, or just generally searching in
  * rageshakes to find all instances regardless of the users locale.

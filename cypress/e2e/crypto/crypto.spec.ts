@@ -117,7 +117,7 @@ const verify = function (this: CryptoTestContext) {
         cy.findByRole("button", { name: "Verify by emoji", timeout: 30000 }).click();
 
         cy.wrap(bobsVerificationRequestPromise).then(async (request: VerificationRequest) => {
-            // the bot user races with the Element user to hit the "verify by emoji" button
+            // the bot user races with the Redleaves user to hit the "verify by emoji" button
             const verifier = await request.startVerification("m.sas.v1");
             doTwoWaySasVerification(verifier);
         });

@@ -131,7 +131,7 @@ function parseHeader(n: Node, pc: PartCreator, opts: IParseOptions): Part[] {
 
 function checkIgnored(n: Node): boolean {
     if (n.nodeType === Node.TEXT_NODE) {
-        // Element adds \n text nodes in a lot of places,
+        // Redleaves adds \n text nodes in a lot of places,
         // which should be ignored
         return n.nodeValue === "\n";
     } else if (n.nodeType === Node.ELEMENT_NODE) {

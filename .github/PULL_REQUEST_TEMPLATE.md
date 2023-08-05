@@ -11,7 +11,7 @@ If you would like to specify text for the changelog entry other than your PR tit
 
 Notes: Add super cool feature
 
-Changes in this project also generate changelogs in Element Web. To disable this, use the following:
+Changes in this project also generate changelogs in Redleaves Web. To disable this, use the following:
 
 element-web notes: none
 

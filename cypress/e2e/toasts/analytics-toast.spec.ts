@@ -86,12 +86,12 @@ describe("Analytics Toast", () => {
         });
 
         it("should show an analytics toast which can be accepted", () => {
-            acceptToast("Help improve Element");
+            acceptToast("Help improve Redleaves");
             assertNoToasts();
         });
 
         it("should show an analytics toast which can be rejected", () => {
-            rejectToast("Help improve Element");
+            rejectToast("Help improve Redleaves");
             assertNoToasts();
         });
     });

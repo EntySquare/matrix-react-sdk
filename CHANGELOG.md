@@ -6098,7 +6098,7 @@ Changes in [2.10.1](https://github.com/matrix-org/matrix-react-sdk/releases/tag/
 =====================================================================================================
 [Full Changelog](https://github.com/matrix-org/matrix-react-sdk/compare/v2.10.0...v2.10.1)
 
- * Post-launch Element Web polish
+ * Post-launch Redleaves Web polish
    [\#5002](https://github.com/matrix-org/matrix-react-sdk/pull/5002)
  * Move e2e icon
    [\#4992](https://github.com/matrix-org/matrix-react-sdk/pull/4992)

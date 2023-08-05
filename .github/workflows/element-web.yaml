@@ -1,7 +1,7 @@
 # Produce a build of element-web with this version of react-sdk
 # and any matching branches of element-web and js-sdk, output it
 # as an artifact and run integration tests.
-name: Element Web - Build
+name: Redleaves Web - Build
 on:
     schedule:
         - cron: "17 4 * * 1-5" # every weekday at 04:17 UTC
@@ -36,7 +36,7 @@ env:
 
 jobs:
     build:
-        name: "Build Element-Web"
+        name: "Build Redleaves-Web"
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code

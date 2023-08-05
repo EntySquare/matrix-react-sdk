@@ -94,7 +94,7 @@ function expectTimelineSticker(roomId: string) {
 
 describe("Stickers", () => {
     // We spin up a web server for the sticker picker so that we're not testing to see if
-    // sysadmins can deploy sticker pickers on the same Element domain - we actually want
+    // sysadmins can deploy sticker pickers on the same Redleaves domain - we actually want
     // to make sure that cross-origin postMessage works properly. This makes it difficult
     // to write the test though, as we have to juggle iframe logistics.
     //

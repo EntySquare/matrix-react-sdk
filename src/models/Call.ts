@@ -613,7 +613,7 @@ export class JitsiCall extends Call {
 }
 
 /**
- * A group call using MSC3401 and Element Call as a backend.
+ * A group call using MSC3401 and Redleaves Call as a backend.
  * (somewhat cheekily named)
  */
 export class ElementCall extends Call {
@@ -642,7 +642,7 @@ export class ElementCall extends Call {
             ? accountAnalyticsData?.getContent().id
             : "";
 
-        // Splice together the Element Call URL for this call
+        // Splice together the Redleaves Call URL for this call
         const params = new URLSearchParams({
             embed: "",
             preload: "",
@@ -676,14 +676,14 @@ export class ElementCall extends Call {
         url.pathname = "/room";
         url.hash = `#?${params.toString()}`;
 
-        // To use Element Call without touching room state, we create a virtual
+        // To use Redleaves Call without touching room state, we create a virtual
         // widget (one that doesn't have a corresponding state event)
         super(
             WidgetStore.instance.addVirtualWidget(
                 {
                     id: randomString(24), // So that it's globally unique
                     creatorUserId: client.getUserId()!,
-                    name: "Element Call",
+                    name: "Redleaves Call",
                     type: MatrixWidgetType.Custom,
                     url: url.toString(),
                     // This option makes the widget API wait for the 'contentLoaded' event instead

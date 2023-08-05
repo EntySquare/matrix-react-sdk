@@ -468,7 +468,7 @@ export default class MatrixChat extends React.PureComponent<IProps, IState> {
             "If someone told you to copy/paste something here, " + "there is a high likelihood you're being scammed!",
         );
         const devText = _t(
-            "If you know what you're doing, Element is open-source, " +
+            "If you know what you're doing, Redleaves is open-source, " +
                 "be sure to check out our GitHub (https://github.com/vector-im/element-web/) " +
                 "and contribute!",
         );

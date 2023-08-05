@@ -34,7 +34,7 @@ declare global {
     namespace Cypress {
         interface Chainable {
             /**
-             * Generates a test user and instantiates an Element session with that user.
+             * Generates a test user and instantiates an Redleaves session with that user.
              * @param synapse the synapse returned by startSynapse
              * @param displayName the displayName to give the test user
              * @param prelaunchFn optional function to run before the app is visited

@@ -226,12 +226,12 @@ describe("LegacyRoomHeader", () => {
     });
 
     it(
-        "hides the voice call button and disables the video call button if configured to use Element Call exclusively " +
+        "hides the voice call button and disables the video call button if configured to use Redleaves Call exclusively " +
             "and there's an ongoing call",
         async () => {
             mockEnabledSettings(["showCallButtonsInComposer", "feature_group_calls"]);
             SdkConfig.put({
-                element_call: { url: "https://call.element.io", use_exclusively: true, brand: "Element Call" },
+                element_call: { url: "https://call.element.io", use_exclusively: true, brand: "Redleaves Call" },
             });
             await ElementCall.create(room);
 
@@ -242,12 +242,12 @@ describe("LegacyRoomHeader", () => {
     );
 
     it(
-        "hides the voice call button and starts an Element call when the video call button is pressed if configured to " +
-            "use Element Call exclusively",
+        "hides the voice call button and starts an Redleaves call when the video call button is pressed if configured to " +
+            "use Redleaves Call exclusively",
         async () => {
             mockEnabledSettings(["showCallButtonsInComposer", "feature_group_calls"]);
             SdkConfig.put({
-                element_call: { url: "https://call.element.io", use_exclusively: true, brand: "Element Call" },
+                element_call: { url: "https://call.element.io", use_exclusively: true, brand: "Redleaves Call" },
             });
 
             renderHeader();
@@ -268,12 +268,12 @@ describe("LegacyRoomHeader", () => {
     );
 
     it(
-        "hides the voice call button and disables the video call button if configured to use Element Call exclusively " +
+        "hides the voice call button and disables the video call button if configured to use Redleaves Call exclusively " +
             "and the user lacks permission",
         () => {
             mockEnabledSettings(["showCallButtonsInComposer", "feature_group_calls"]);
             SdkConfig.put({
-                element_call: { url: "https://call.element.io", use_exclusively: true, brand: "Element Call" },
+                element_call: { url: "https://call.element.io", use_exclusively: true, brand: "Redleaves Call" },
             });
             mockEventPowerLevels({ [ElementCall.CALL_EVENT_TYPE.name]: 100 });
 
@@ -283,7 +283,7 @@ describe("LegacyRoomHeader", () => {
         },
     );
 
-    it("disables call buttons in the new group call experience if there's an ongoing Element call", async () => {
+    it("disables call buttons in the new group call experience if there's an ongoing Redleaves call", async () => {
         mockEnabledSettings(["showCallButtonsInComposer", "feature_group_calls"]);
         await ElementCall.create(room);
 
@@ -341,7 +341,7 @@ describe("LegacyRoomHeader", () => {
 
     it(
         "creates a Jitsi widget when call buttons are pressed in the new group call experience if the user lacks " +
-            "permission to start Element calls",
+            "permission to start Redleaves calls",
         async () => {
             mockEnabledSettings(["showCallButtonsInComposer", "feature_group_calls"]);
             mockRoomMembers([alice, bob, carol]);
@@ -382,7 +382,7 @@ describe("LegacyRoomHeader", () => {
             await act(() => Promise.resolve()); // Allow effects to settle
             expect(placeCallSpy).toHaveBeenCalledWith(room.roomId, CallType.Video);
 
-            // Then try starting an Element call from the menu
+            // Then try starting an Redleaves call from the menu
             const dispatcherSpy = jest.fn();
             const dispatcherRef = defaultDispatcher.register(dispatcherSpy);
             fireEvent.click(screen.getByRole("button", { name: "Video call" }));
@@ -399,7 +399,7 @@ describe("LegacyRoomHeader", () => {
     );
 
     it(
-        "disables the voice call button and starts an Element call when the video call button is pressed in the new " +
+        "disables the voice call button and starts an Redleaves call when the video call button is pressed in the new " +
             "group call experience if the user lacks permission to edit widgets",
         async () => {
             mockEnabledSettings(["showCallButtonsInComposer", "feature_group_calls"]);

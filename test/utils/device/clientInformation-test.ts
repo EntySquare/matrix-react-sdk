@@ -36,7 +36,7 @@ describe("recordClientInformation()", () => {
     const sdkConfig: DeepReadonly<IConfigOptions> = {
         ...DEFAULTS,
         brand: "Test Brand",
-        element_call: { url: "", use_exclusively: false, brand: "Element Call" },
+        element_call: { url: "", use_exclusively: false, brand: "Redleaves Call" },
     };
 
     const platform = {
@@ -95,7 +95,7 @@ describe("getDeviceClientInformation()", () => {
 
     it("returns client information for the device", () => {
         const eventContent = {
-            name: "Element Web",
+            name: "Redleaves Web",
             version: "1.2.3",
             url: "test.com",
         };
@@ -110,7 +110,7 @@ describe("getDeviceClientInformation()", () => {
     it("excludes values with incorrect types", () => {
         const eventContent = {
             extraField: "hello",
-            name: "Element Web",
+            name: "Redleaves Web",
             // wrong format
             version: { value: "1.2.3" },
             url: "test.com",

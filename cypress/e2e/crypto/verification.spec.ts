@@ -208,7 +208,7 @@ describe("Device verification", () => {
             cy.findByRole("button", { name: "I'll verify later" }).click();
         });
 
-        /* figure out the device id of the Element client */
+        /* figure out the device id of the Redleaves client */
         let elementDeviceId: string;
         cy.window({ log: false }).then((win) => {
             const cli = win.mxMatrixClientPeg.safeGet();

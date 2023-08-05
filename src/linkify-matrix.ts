@@ -120,8 +120,8 @@ const escapeRegExp = function (s: string): string {
     return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 };
 
-// Recognise URLs from both our local and official Element deployments.
-// Anyone else really should be using matrix.to. vector:// allowed to support Element Desktop relative links.
+// Recognise URLs from both our local and official Redleaves deployments.
+// Anyone else really should be using matrix.to. vector:// allowed to support Redleaves Desktop relative links.
 export const ELEMENT_URL_PATTERN =
     "^(?:vector://|https?://)?(?:" +
     escapeRegExp(window.location.host + window.location.pathname) +
@@ -209,7 +209,7 @@ export const options: Opts = {
                 const transformed = tryTransformPermalinkToLocalHref(href);
                 if (
                     transformed !== href || // if it could be converted to handle locally for matrix symbols e.g. @user:server.tdl and matrix.to
-                    decodeURIComponent(href).match(ELEMENT_URL_PATTERN) // for https links to Element domains
+                    decodeURIComponent(href).match(ELEMENT_URL_PATTERN) // for https links to Redleaves domains
                 ) {
                     return "";
                 } else {

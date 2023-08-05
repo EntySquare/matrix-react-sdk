@@ -5,7 +5,7 @@
 name: Cypress End to End Tests
 on:
     workflow_run:
-        workflows: ["Element Web - Build"]
+        workflows: ["Redleaves Web - Build"]
         types:
             - completed
 
@@ -283,7 +283,7 @@ jobs:
                   file-pattern: results-*.xml
                   kiwi-username: ${{ secrets.TCMS_USERNAME }}
                   kiwi-password: ${{ secrets.TCMS_PASSWORD }}
-                  product: "Element Web"
+                  product: "Redleaves Web"
                   product-version: ${{ github.event.workflow_run.head_branch }}
                   build-id: ${{ github.event.workflow_run.head_sha }}
                   suite-name: "Cypress E2E"

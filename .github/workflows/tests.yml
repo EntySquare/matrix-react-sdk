@@ -90,7 +90,7 @@ jobs:
                   target_url: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
     app-tests:
-        name: Element Web Integration Tests
+        name: Redleaves Web Integration Tests
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3

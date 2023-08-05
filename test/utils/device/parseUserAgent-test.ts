@@ -32,14 +32,14 @@ const makeDeviceExtendedInfo = (
 /* eslint-disable max-len */
 const ANDROID_UA = [
     // New User Agent Implementation
-    "Element dbg/1.5.0-dev (Xiaomi Mi 9T; Android 11; RKQ1.200826.002 test-keys; Flavour GooglePlay; MatrixAndroidSdk2 1.5.2)",
-    "Element/1.5.0 (Samsung SM-G960F; Android 6.0.1; RKQ1.200826.002; Flavour FDroid; MatrixAndroidSdk2 1.5.2)",
-    "Element/1.5.0 (Google Nexus 5; Android 7.0; RKQ1.200826.002 test test; Flavour FDroid; MatrixAndroidSdk2 1.5.2)",
-    "Element/1.5.0 (Google (Nexus) 5; Android 7.0; RKQ1.200826.002 test test; Flavour FDroid; MatrixAndroidSdk2 1.5.2)",
-    "Element/1.5.0 (Google (Nexus) (5); Android 7.0; RKQ1.200826.002 test test; Flavour FDroid; MatrixAndroidSdk2 1.5.2)",
+    "Redleaves dbg/1.5.0-dev (Xiaomi Mi 9T; Android 11; RKQ1.200826.002 test-keys; Flavour GooglePlay; MatrixAndroidSdk2 1.5.2)",
+    "Redleaves/1.5.0 (Samsung SM-G960F; Android 6.0.1; RKQ1.200826.002; Flavour FDroid; MatrixAndroidSdk2 1.5.2)",
+    "Redleaves/1.5.0 (Google Nexus 5; Android 7.0; RKQ1.200826.002 test test; Flavour FDroid; MatrixAndroidSdk2 1.5.2)",
+    "Redleaves/1.5.0 (Google (Nexus) 5; Android 7.0; RKQ1.200826.002 test test; Flavour FDroid; MatrixAndroidSdk2 1.5.2)",
+    "Redleaves/1.5.0 (Google (Nexus) (5); Android 7.0; RKQ1.200826.002 test test; Flavour FDroid; MatrixAndroidSdk2 1.5.2)",
     // Legacy User Agent Implementation
-    "Element/1.0.0 (Linux; U; Android 6.0.1; SM-A510F Build/MMB29; Flavour GPlay; MatrixAndroidSdk2 1.0)",
-    "Element/1.0.0 (Linux; Android 7.0; SM-G610M Build/NRD90M; Flavour GPlay; MatrixAndroidSdk2 1.0)",
+    "Redleaves/1.0.0 (Linux; U; Android 6.0.1; SM-A510F Build/MMB29; Flavour GPlay; MatrixAndroidSdk2 1.0)",
+    "Redleaves/1.0.0 (Linux; Android 7.0; SM-G610M Build/NRD90M; Flavour GPlay; MatrixAndroidSdk2 1.0)",
 ];
 
 const ANDROID_EXPECTED_RESULT = [
@@ -53,10 +53,10 @@ const ANDROID_EXPECTED_RESULT = [
 ];
 
 const IOS_UA = [
-    "Element/1.8.21 (iPhone; iOS 15.2; Scale/3.00)",
-    "Element/1.8.21 (iPhone XS Max; iOS 15.2; Scale/3.00)",
-    "Element/1.8.21 (iPad Pro (11-inch); iOS 15.2; Scale/3.00)",
-    "Element/1.8.21 (iPad Pro (12.9-inch) (3rd generation); iOS 15.2; Scale/3.00)",
+    "Redleaves/1.8.21 (iPhone; iOS 15.2; Scale/3.00)",
+    "Redleaves/1.8.21 (iPhone XS Max; iOS 15.2; Scale/3.00)",
+    "Redleaves/1.8.21 (iPad Pro (11-inch); iOS 15.2; Scale/3.00)",
+    "Redleaves/1.8.21 (iPad Pro (12.9-inch) (3rd generation); iOS 15.2; Scale/3.00)",
 ];
 const IOS_EXPECTED_RESULT = [
     makeDeviceExtendedInfo(DeviceType.Mobile, "Apple iPhone", "iOS 15.2"),

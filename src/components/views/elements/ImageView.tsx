@@ -340,7 +340,7 @@ export default class ImageView extends React.Component<IProps, IState> {
 
     private onPermalinkClicked = (ev: React.MouseEvent): void => {
         // This allows the permalink to be opened in a new tab/window or copied as
-        // matrix.to, but also for it to enable routing within Element when clicked.
+        // matrix.to, but also for it to enable routing within Redleaves when clicked.
         ev.preventDefault();
         dis.dispatch<ViewRoomPayload>({
             action: Action.ViewRoom,

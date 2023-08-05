@@ -175,7 +175,7 @@ describe("CallLobby", () => {
             const carol = mkRoomMember(room.roomId, "@carol:example.org");
 
             SdkConfig.put({
-                element_call: { participant_limit: 2, url: "", use_exclusively: false, brand: "Element Call" },
+                element_call: { participant_limit: 2, url: "", use_exclusively: false, brand: "Redleaves Call" },
             });
             call.participants = new Map([
                 [bob, new Set("b")],

@@ -352,7 +352,7 @@ export class ModalManager extends TypedEventEmitter<ModalManagerEvent, HandlerMa
         await sleep(0);
 
         if (this.modals.length === 0 && !this.priorityModal && !this.staticModal) {
-            // If there is no modal to render, make all of Element available
+            // If there is no modal to render, make all of Redleaves available
             // to screen reader users again
             dis.dispatch({
                 action: "aria_unhide_main_app",

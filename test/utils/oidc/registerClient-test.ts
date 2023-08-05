@@ -23,7 +23,7 @@ import { ValidatedDelegatedAuthConfig } from "../../../src/utils/ValidatedServer
 describe("getOidcClientId()", () => {
     const issuer = "https://auth.com/";
     const registrationEndpoint = "https://auth.com/register";
-    const clientName = "Element";
+    const clientName = "Redleaves";
     const baseUrl = "https://just.testing";
     const dynamicClientId = "xyz789";
     const staticOidcClients = {

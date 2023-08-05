@@ -363,13 +363,13 @@ const RoomSummaryCard: React.FC<IProps> = ({ room, permalinkCreator, onClose }) 
                         {_t("Export chat")}
                     </Button>
                 )}
-                <Button
+                {/* <Button
                     data-testid="shareRoomButton"
                     className="mx_RoomSummaryCard_icon_share"
                     onClick={onShareRoomClick}
                 >
                     {_t("Share room")}
-                </Button>
+                </Button> */}
                 <Button className="mx_RoomSummaryCard_icon_settings" onClick={onRoomSettingsClick}>
                     {_t("Room settings")}
                 </Button>

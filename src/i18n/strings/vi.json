@@ -3147,7 +3147,7 @@
     "You can also ask your homeserver admin to upgrade the server to change this behaviour.": "Bạn còn có thể yêu cầu quản trị viên máy chủ nhà nâng cấp máy chủ để thay đổi nó.",
     "Don’t miss a thing by taking %(brand)s with you": "Không bỏ lỡ gì bằng cách mang %(brand)s bên bạn",
     "Show HTML representation of room topics": "Hiện chủ đề phòng bằng HTML",
-    "Element Call video rooms": "Phòng truyền hình Element Call",
+    "Redleaves Call video rooms": "Phòng truyền hình Redleaves Call",
     "Community ownership": "Làm chủ cộng đồng",
     "Alternatively, you can try to use the public server at <server/>, but this will not be as reliable, and it will share your IP address with that server. You can also manage this in Settings.": "Ngoài ra, bạn còn có thể thử dùng máy chủ công cộng tại <server/>, nhưng máy chủ này sẽ không đáng tin cậy, sẽ chia sẻ địa chỉ IP của bạn với máy chủ đó. Bạn cũng có thể quản lý ở phần Cài đặt.",
     "You attempted to join using a room ID without providing a list of servers to join through. Room IDs are internal identifiers and cannot be used to join a room without additional information.": "Bạn tìm cách tham gia một phòng bằng định danh (ID) phòng nhưng không cung cấp danh sách các máy chủ để tham gia qua. Định danh phòng là nội bộ và không thể được dùng để tham gia phòng mà không có thông tin thêm.",

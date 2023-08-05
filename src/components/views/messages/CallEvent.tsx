@@ -159,7 +159,7 @@ interface CallEventProps {
 }
 
 /**
- * An event tile representing an active or historical Element call.
+ * An event tile representing an active or historical Redleaves call.
  */
 export const CallEvent = forwardRef<any, CallEventProps>(({ mxEvent }, ref) => {
     const client = useContext(MatrixClientContext);

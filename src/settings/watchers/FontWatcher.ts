@@ -66,7 +66,7 @@ export class FontWatcher implements IWatcher {
             // For some odd reason, the persisted value in user storage has an offset
             // of 5 pixels for all values stored under `baseFontSize`
             const LEGACY_SIZE_DIFF = 5;
-            // Compound uses a base font size of `16px`, whereas the old Element
+            // Compound uses a base font size of `16px`, whereas the old Redleaves
             // styles based their calculations off a `15px` root font size.
             const ROOT_FONT_SIZE_INCREASE = 1;
 

@@ -715,7 +715,7 @@ describe("Timeline", () => {
             cy.intercept("**/_matrix/media/r0/preview_url?url=https%3A%2F%2Fcall.element.io%2F&ts=*", {
                 statusCode: 200,
                 body: {
-                    "og:title": "Element Call",
+                    "og:title": "Redleaves Call",
                     "og:description": null,
                     "og:image:width": 48,
                     "og:image:height": 48,
@@ -734,7 +734,7 @@ describe("Timeline", () => {
             });
             cy.visit("/#/room/" + roomId);
 
-            cy.get(".mx_LinkPreviewWidget").should("exist").findByText("Element Call");
+            cy.get(".mx_LinkPreviewWidget").should("exist").findByText("Redleaves Call");
 
             cy.wait("@preview_url");
             cy.wait("@mxc");

@@ -203,7 +203,7 @@ export interface OidcNativeFlow extends ILoginFlow {
  * results.
  *
  * @param delegatedAuthConfig  Auth config from ValidatedServerConfig
- * @param clientName Client name to register with the OP, eg 'Element', used during client registration with OP
+ * @param clientName Client name to register with the OP, eg 'Redleaves', used during client registration with OP
  * @param staticOidcClientIds static client config from config.json, used during client registration with OP
  * @returns Promise<OidcNativeFlow> when oidc native authentication flow is supported and correctly configured
  * @throws when client can't register with OP, or any unexpected error

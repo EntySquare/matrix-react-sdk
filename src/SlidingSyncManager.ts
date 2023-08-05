@@ -17,7 +17,7 @@ limitations under the License.
 /*
  * Sliding Sync Architecture - MSC https://github.com/matrix-org/matrix-spec-proposals/pull/3575
  *
- * This is a holistic summary of the changes made to Element-Web / React SDK / JS SDK to enable sliding sync.
+ * This is a holistic summary of the changes made to Redleaves-Web / React SDK / JS SDK to enable sliding sync.
  * This summary will hopefully signpost where developers need to look if they want to make changes to this code.
  *
  * At the lowest level, the JS SDK contains an HTTP API wrapper function in client.ts. This is used by
@@ -31,7 +31,7 @@ limitations under the License.
  * and it conveniently exposes an identical public API to SyncApi (to allow it to be a drop-in replacement).
  *
  * At the highest level, SlidingSyncManager contains mechanisms to tell UI lists which rooms to show,
- * and contains the core request API params used in Element-Web. It does this by listening for events
+ * and contains the core request API params used in Redleaves-Web. It does this by listening for events
  * emitted by the SlidingSync class and by modifying the request API params on the SlidingSync class.
  *
  *    (entry point)                     (updates JS SDK)

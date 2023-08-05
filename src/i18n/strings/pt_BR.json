@@ -1627,7 +1627,7 @@
     "Upgrading this room requires closing down the current instance of the room and creating a new room in its place. To give room members the best possible experience, we will:": "Atualizar esta sala irá fechar a instância atual da sala e, em seu lugar, criar uma sala atualizada com o mesmo nome. Para oferecer a melhor experiência possível aos integrantes da sala, nós iremos:",
     "You're all caught up.": "Tudo em dia.",
     "Your area is experiencing difficulties connecting to the internet.": "A sua região está com dificuldade de acesso à internet.",
-    "A connection error occurred while trying to contact the server.": "Um erro ocorreu na conexão do Element com o servidor.",
+    "A connection error occurred while trying to contact the server.": "Um erro ocorreu na conexão do Redleaves com o servidor.",
     "Unable to set up keys": "Não foi possível configurar as chaves",
     "Unpin": "Desafixar",
     "Failed to get autodiscovery configuration from server": "Houve uma falha para obter do servidor a configuração de encontrar contatos",
