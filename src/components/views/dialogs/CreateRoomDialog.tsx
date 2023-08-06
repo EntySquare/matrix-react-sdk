@@ -81,7 +81,9 @@ export default class CreateRoomDialog extends React.Component<IProps, IState> {
         const cli = MatrixClientPeg.safeGet();
         this.state = {
             isPublic: this.props.defaultPublic || false,
-            isEncrypted: this.props.defaultEncrypted ?? privateShouldBeEncrypted(cli),
+            // 默认关闭e2e
+//             isEncrypted: this.props.defaultEncrypted ?? privateShouldBeEncrypted(cli),
+            isEncrypted: false,
             joinRule,
             name: this.props.defaultName || "",
             topic: "",
@@ -95,8 +97,10 @@ export default class CreateRoomDialog extends React.Component<IProps, IState> {
         checkUserIsAllowedToChangeEncryption(cli, Preset.PrivateChat).then(({ allowChange, forcedValue }) =>
             this.setState((state) => ({
                 canChangeEncryption: allowChange,
+                // 默认关闭e2e
                 // override with forcedValue if it is set
-                isEncrypted: forcedValue ?? state.isEncrypted,
+//                 isEncrypted: forcedValue ?? state.isEncrypted,
+                isEncrypted: false,
             })),
         );
     }
@@ -317,18 +321,19 @@ export default class CreateRoomDialog extends React.Component<IProps, IState> {
                         "in private rooms & Direct Messages.",
                 );
             }
-            e2eeSection = (
-                <React.Fragment>
-                    <LabelledToggleSwitch
-                        label={_t("Enable end-to-end encryption")}
-                        onChange={this.onEncryptedChange}
-                        value={this.state.isEncrypted}
-                        className="mx_CreateRoomDialog_e2eSwitch" // for end-to-end tests
-                        disabled={!this.state.canChangeEncryption}
-                    />
-                    <p>{microcopy}</p>
-                </React.Fragment>
-            );
+            // 隐藏e2e选择按钮
+//             e2eeSection = (
+//                 <React.Fragment>
+//                     <LabelledToggleSwitch
+//                         label={_t("Enable end-to-end encryption")}
+//                         onChange={this.onEncryptedChange}
+//                         value={this.state.isEncrypted}
+//                         className="mx_CreateRoomDialog_e2eSwitch" // for end-to-end tests
+//                         disabled={!this.state.canChangeEncryption}
+//                     />
+//                     <p>{microcopy}</p>
+//                 </React.Fragment>
+//             );
         }
 
         let federateLabel = _t(
